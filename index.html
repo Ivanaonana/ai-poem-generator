@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <title>AI Poem Fenerator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Magical Realism Poem Generator</h1>
+        <h1>AI Magical Realist Poem Generator</h1>
       </header>
 
       <main>
         <form id="poem-form">
           <input
             type="text"
-            placeholder="Enter a word in your brilliant beautiful brain"
+            placeholder="Enter anything in your beautiful mind"
             autofocus
             required
             autocomplete="off"
@@ -26,15 +28,14 @@
           />
           <button type="submit" class="submit-button">Generate 🔮</button>
         </form>
-        <div class="poem" id="poem"></div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
         This AI project was coded by
         <a href="http://www.linkedin.com/in/ivana-w" target="_blank"
           >Ivana Wang</a
-        >
-        and is open-sourced on
+        >. It is open-sourced on
         <a
           href="https://github.com/Ivanaonana/english-poem-generator"
           target="_blank"
@@ -46,7 +47,7 @@
         >.
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="src/index.js"></script>
+
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>

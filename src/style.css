@@ -33,14 +33,15 @@ form {
 }
 
 .instructions {
-  padding: 16px;
+  padding: 15px 20px;
   border: 1px solid rgba(39, 33, 66, 0.5);
   width: 80%;
   font-size: 18px;
   border-radius: 50px;
-  line-height: 20px;
+  line-height: 18px;
   color: #2e1a47;
   font-family: cursive;
+  letter-spacing: 1px;
 }
 
 .submit-button {
@@ -54,22 +55,39 @@ form {
   border-radius: 50px;
   padding: 10px 20px;
   font-family: cursive;
+  letter-spacing: 1px;
 }
 
 .poem {
   font-size: 18px;
   background-color: #f8f4e3;
-  padding: 20px;
-  line-height: 24px;
+  padding: 20px 30px 20px 30px;
+  line-height: 32px;
   border-left: 3px solid #f2c779;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0, 08);
   border-radius: 10px;
   font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
   font-size: 13px;
   margin-top: 30px;
   color: #f8f4e3;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.generating {
+  animation: blink 1s step step-start 0 infinite;
 }
